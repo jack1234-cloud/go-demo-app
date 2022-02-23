@@ -37,7 +37,7 @@ func helloWorldJackMode(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", htlmVsPlain)
-	http.HandleFunc("/timeout", timeout)
+	http.HandleFunc("/jack", helloWorldPage)
 	// http.ListenAndServe("", nil)
 
 	server := http.Server{
